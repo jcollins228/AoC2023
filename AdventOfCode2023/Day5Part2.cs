@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCode2023
 {
@@ -132,7 +130,7 @@ namespace AdventOfCode2023
                         lowest = newSeed < lowest ? newSeed : lowest;
                     }
 
-                    if (lowestDif.Value > 0)
+                    if (lowestDif != null && lowestDif.Value > 0)
                         i = i + (lowestDif.Value - 1);
 
                 }
