@@ -14,7 +14,7 @@ namespace AdventOfCode2023
 
         public static List<string> GetFileData(int day, string file)
         {
-            var completePath = $"{filePath} {day.ToString()}\\{file}";
+            var completePath = $"{filePath}{day.ToString()}\\{file}";
             var inpputFile = File.ReadAllLines(completePath);
             var inputList = new List<string>(inpputFile);
 

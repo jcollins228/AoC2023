@@ -144,8 +144,10 @@ namespace AdventOfCode2023
                     InitialRank = 6;
             }
 
-            public int CompareTo(Hand comparedHand)
+            public int CompareTo(Hand? comparedHand)
             {
+                if (comparedHand == null)
+                    return 0;
                 if (this.HandCards == comparedHand.HandCards)
                     return 0;
                 if (this.HandCards[0].Value < comparedHand.HandCards[0].Value)
