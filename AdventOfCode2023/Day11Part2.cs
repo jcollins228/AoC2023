@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2023
 {
-    public static class DayTemplate
+    public static class Day11Part2
     {
 
-        internal static int _dayNum = 9;
+        internal static int _dayNum = 11;
 
         public static void Start(string[] args)
         {
