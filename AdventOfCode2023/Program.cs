@@ -11,7 +11,7 @@ namespace AdventOfCode2023
 
         public static void Main(string[] args)
         {
-            Day11Part1.Start(args);
+            Day12Part1.Start(args);
 
         }
 

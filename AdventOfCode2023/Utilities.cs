@@ -20,5 +20,16 @@ namespace AdventOfCode2023
 
             return inputList;
         }
+
+        public static List<int> IndexOfAny(string original, char searchValue)
+        {
+            var foundIndexes = new List<int>();
+            for (int i = original.IndexOf(searchValue); i > -1; i = original.IndexOf(searchValue, i + 1))
+            {
+                // for loop end when i=-1 ('a' not found)
+                foundIndexes.Add(i);
+            }
+            return foundIndexes;
+        }
     }
 }
